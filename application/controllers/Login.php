@@ -15,20 +15,6 @@ class Login extends CI_Controller {
         $this->load->view('admin/login');
     }
 
-    /*function verify(){
-        $usuario = $this->input->post('usuario');
-        $password = $this->input->post('password');
-        $this->load->model('Admin_Model');
-        $check = $this->Admin_Model->validate($usuario, $password);
-
-        if($check)
-        {
-            $this->session->set_userdata('admin', '1');
-            redirect(base_url('Administrador'));
-        }else{
-            redirect(base_url());
-        }
-    }*/
 
     function verify(){
 
